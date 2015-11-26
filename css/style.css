@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.marketing .col-lg-6 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-6 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.marketing img {
+	max-width:140px;
+	max-height:30px;
+}
+
+.portraet {
+	margin-right:15px;
+}
+
+.clearfix {
+	clear:both;
+}
+
+.default-text-color{
+	color:rgb(51,51,51);	
+}
+
+.screenreader-only {
+	position:absolute;
+	width:1px;
+	height:1px;
+	padding:0;
+	margin:-1px;
+	overflow:hidden;
+	clip:rect(0,0,0,0);
+	border:0
+}
+
+.screenreader-only-focusable:active,.screenreader-only-focusable:focus {
+	position:static;
+	width:auto;
+	height:auto;
+	margin:0;
+	overflow:visible;
+	clip:auto
+}
