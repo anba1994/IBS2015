@@ -1,27 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="IBS Abgabe 2015">
-<meta name="author" content="Robin Lohr">
-<title>Cloud Projekt - Wikipedia Suche</title>
-<link href="css/style.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="IBS Abgabe 2015">
+    <meta name="author" content="Robin Lohr">
 
-<body>
-<nav class="screenreader-only" title="Inhaltliches Menü">
-    <ul>
-        <li><a href="#main-content">Zur Wikipedia Suche</a></li>
-    </ul>
-</nav>
-<main id="main-content" tabindex="-1">
-<h1>Wikipedia Suche</h1>
-<form id="wiki-search" action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
-	<label title="Bitte geben Sie hier ihren Suchbegriff ein." for="search-input">Suchbegriff:</label><input id="search-input" maxlength="250" type="text" name="search" value="" /><br/>
-    <input title="Suchen Sie auf Wikipedia nach einem Artikel über ihren Suchbegriff" type="submit" name="go" value="Nach Artikel Suchen"/><input title="Suchen Sie auf Wikipedia nach ihrem Suchbegriff." type="submit" name="fulltext" value="Volltext Suche"/>
-</form>
+    <title>Cloud Projekt</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+	<nav class="sr-only" title="Inhaltliches Menü">
+    	<ul>
+        	<li><a href="#main-content">Zum Inhalt</a></li>
+        	<li><a href="#main-nav">Zur Navigation</a></li>
+        </ul>
+    </nav>
+    <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Navigation Einklappen/Ausklappen</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Cloud Projekt</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="studium.html">Mein Studium</a></li>
+            <li class="active"><a href="wiki.html"><span class="sr-only">Sie befinden sich auf </span>Wikipedia Suche</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="impressum.html">Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content" tabindex="-1">
+    <div class="jumbotron">
+      <div class="container">
+      	<img class="portraet pull-left" src="images/wikipedia.svg" alt="Wikipedia Logo"/>
+        <h1>Wikipedia Suche</h1>
+      </div>
+    </div>
+    <div class="container">
+    	<form id="wiki-search" action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
+            <label title="Bitte geben Sie hier ihren Suchbegriff ein." for="search-input"><h2><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Wonach suchen Sie?</h2></label><br/>
+            <input id="search-input" maxlength="250" class="form-control" placeholder="Bitte geben Sie hier ihren Suchbegriff ein." type="text" name="search" value="" /><br/>
+            <input title="Suchen Sie auf Wikipedia nach einem Artikel über ihren Suchbegriff" class="btn btn-sm btn-primary" type="submit" name="go" value="Nach Artikel Suchen"/>
+            <input title="Suchen Sie auf Wikipedia nach ihrem Suchbegriff." class="btn btn-sm btn-primary" type="submit" name="fulltext" value="Volltext Suche"/>
+    	</form>
+      <hr>
+
+      <footer>
+      	<div class="row">
+        	<div class="col-xs-6 col-md-6 col-lg-6"><p>&copy; 2015 Robin Lohr</p></div>
+            <div class="col-xs-6 col-md-6 col-lg-6"><p class="pull-right"><a href="http://wave.webaim.org/report#/http://robinlohr.cloudcontrolled.com/wiki.html" title="opens new window" target="_blank"><img src="images/wcag2AAA.gif" alt="WCAG Logo"></a></p></div>
+        </div>
+      </footer>
+    </div>
 </main>
-</body>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
 </html>
